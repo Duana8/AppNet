@@ -7,5 +7,5 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/runtime:8.0
 WORKDIR /App
 COPY --from=build-env /App/out .
-EXPOSE 8888
+EXPOSE 9999
 ENTRYPOINT ["dotnet", "Server.dll"]
