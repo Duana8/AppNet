@@ -18,7 +18,7 @@ namespace Server
 		static void Main(string[] args)
 		{
 			IPEndPoint localEP = 
-				new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8888);
+				new IPEndPoint(0, 9999);
 			Socket listenSocket = 
 				new Socket(AddressFamily.InterNetwork, 
 							SocketType.Stream, 
