@@ -87,7 +87,7 @@ namespace Server
 				message += 
 					Encoding.Unicode.GetString(buffer, 0, bytes);
 				// Добавление в файл 
-				using (StreamWriter writer = new StreamWriter("/home/net_chat/log.txt", true))
+				using (StreamWriter writer = new StreamWriter("/home/net_chat/org.txt", true))
 				{
 					writer.WriteLine(message);
 				}
